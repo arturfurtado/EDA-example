@@ -1,8 +1,8 @@
-import { z } from "zod";
+import { t } from "elysia";
 
-const envValidation = z.object({
-    DATABASE_URL: z.string(),
-    ELYSIA_SERVER_PORT: z.coerce.number()
+const envValidation = t.Object({
+    DATABASE_URL: t.String(),
+    ELYSIA_SERVER_PORT: t.Number()
 })
 
 const env = envValidation.parse(process.env)

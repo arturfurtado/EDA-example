@@ -9,8 +9,7 @@
     "drizzle-orm": "^0.45.2",
     "drizzle-typebox": "^0.3.3",
     "elysia": "latest",
-    "pg": "^8.20.0",
-    "zod": "^4.3.6"
+    "pg": "^8.20.0"
   },
   "devDependencies": {
     "@types/pg": "^8.20.0",
