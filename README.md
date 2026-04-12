@@ -5,8 +5,7 @@ The idea of this project is to study and implement an Event Driven Architecture 
 ## Services: 
 
 ### Orders
-- Bun
-- TypeScript
+- Go
 - PostgreSQL
 
 ### Tenants 
@@ -21,9 +20,9 @@ The idea of this project is to study and implement an Event Driven Architecture 
 - PostgreSQL or MongoDB (still deciding)
 
 ## Event Broker
-- RabbitMQ (could be Apache Kafka)
+- Apacha Kafka
 
-Architecture Principles: The services dont know about the existence of any other, they will throw events inside the Event Broker(RabbitMQ) and the other services will do what they need to do based on the event, but the creator of the event doesn't know about the existence of anything that is dealing with that event
+Architecture Principles: The services dont know about the existence of any other, they will throw events inside the Event Broker(Kafka) and the other services will do what they need to do based on the event, but the creator of the event doesn't know about the existence of anything that is dealing with that event
 
 # First Idea: 
 
