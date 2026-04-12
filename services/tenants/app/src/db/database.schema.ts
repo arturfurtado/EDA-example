@@ -2,9 +2,9 @@ import { index, integer, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-c
 
 export const tenants = pgTable("tenants", {
     id: uuid().defaultRandom().primaryKey(),
-    name: text().unique(),
+    name: text().unique().notNull(),
     description: text(),
-    cpfCnpj: text("cpf_cnpj")
+    cpfCnpj: text("cpf_cnpj").notNull()
 })
 
 export const tenantItems = pgTable("tenant_items", {
